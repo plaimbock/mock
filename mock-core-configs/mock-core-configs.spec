@@ -3,8 +3,8 @@
 %endif
 
 Name:       mock-core-configs
-Version:    42.3
-Release:    1%{?dist}
+Version:    42.4
+Release:    0.1%{?dist}
 Summary:    Mock core config files basic chroots
 
 License:    GPL-2.0-or-later
@@ -22,7 +22,7 @@ BuildArch:  noarch
 Provides: mock-configs
 
 # distribution-gpg-keys contains GPG keys used by mock configs
-Requires:   distribution-gpg-keys >= 1.111
+Requires:   distribution-gpg-keys >= 1.112
 # specify minimal compatible version of mock
 Requires:   mock >= 6.1.test
 Requires:   mock-filesystem
@@ -153,6 +153,9 @@ fi
 %ghost %config(noreplace,missingok) %{_sysconfdir}/mock/default.cfg
 
 %changelog
+* Sat May 31 2025 Patrick Laimbock <patrick@laimbock.com> - 42.4-0.1
+- add alma10 configs
+
 * Thu May 22 2025 Pavel Raiskup <praiskup@redhat.com> 42.3-1
 - Fedora 40 EOL
 - Add RHEL 10 template and configs (carlwgeorge@gmail.com)
