@@ -18,8 +18,8 @@
 
 Summary: Builds packages inside chroots
 Name: mock
-Version: 6.2
-Release: 1%{?dist}
+Version: 6.3
+Release: 0.1%{?dist}
 License: GPL-2.0-or-later
 # Source is created by
 # git clone https://github.com/rpm-software-management/mock.git
@@ -330,6 +330,9 @@ pylint-3 py/mockbuild/ py/*.py py/mockbuild/plugins/* || :
 %config(noreplace) %{_sysusersdir}/mock.conf
 
 %changelog
+* Sat May 31 2025 Patrick Laimbock <patrick@laimbock.com> 6.3-0.1
+-  Add AlmaLinux 10 configs #1586
+
 * Thu May 22 2025 Pavel Raiskup <praiskup@redhat.com> 6.2-1
 - disable copying ca-trust dirs with Azure Linux 3 (reubeno@users.noreply.github.com)
 - bail clearly when image pull fails (awilliam@redhat.com)
