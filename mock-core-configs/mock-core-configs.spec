@@ -3,7 +3,7 @@
 %endif
 
 Name:       mock-core-configs
-Version:    42.3
+Version:    42.5
 Release:    1%{?dist}
 Summary:    Mock core config files basic chroots
 
@@ -153,6 +153,16 @@ fi
 %ghost %config(noreplace,missingok) %{_sysconfdir}/mock/default.cfg
 
 %changelog
+* Sat Jun 07 2025 Patrick Laimbock <patrick@laimbock.com> 42.5-1
+- Add config for AlmaLinux Kitten 10 x86_64_v2 enable countme on almalinux
+  8/9/10kitten repos (jonathan@almalinux.org)
+- Add AlmaLinux 10 configs (jonathan@almalinux.org)
+
+* Sat Jun 07 2025 Patrick Laimbock <patrick@laimbock.com>
+- Add config for AlmaLinux Kitten 10 x86_64_v2 enable countme on almalinux
+  8/9/10kitten repos (jonathan@almalinux.org)
+- Add AlmaLinux 10 configs (jonathan@almalinux.org)
+
 * Thu May 22 2025 Pavel Raiskup <praiskup@redhat.com> 42.3-1
 - Fedora 40 EOL
 - Add RHEL 10 template and configs (carlwgeorge@gmail.com)
