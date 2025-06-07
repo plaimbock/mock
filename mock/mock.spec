@@ -18,7 +18,7 @@
 
 Summary: Builds packages inside chroots
 Name: mock
-Version: 6.2
+Version: 6.4
 Release: 1%{?dist}
 License: GPL-2.0-or-later
 # Source is created by
@@ -330,6 +330,17 @@ pylint-3 py/mockbuild/ py/*.py py/mockbuild/plugins/* || :
 %config(noreplace) %{_sysusersdir}/mock.conf
 
 %changelog
+* Sat Jun 07 2025 Patrick Laimbock <patrick@laimbock.com> 6.4-1
+- feat: plugin: hw_info: added human-readable flag for memory info
+  (k0ste@k0ste.ru)
+- Remove the traceLog decorator from pretty_getcwd (ferdnyc@gmail.com)
+
+* Sat Jun 07 2025 Patrick Laimbock <patrick@laimbock.com>
+- add tag mock-6.4-1 for an Almalinux-10-x86_64_v2 build
+- feat: plugin: hw_info: added human-readable flag for memory info
+  (k0ste@k0ste.ru)
+- Remove the traceLog decorator from pretty_getcwd (ferdnyc@gmail.com)
+
 * Thu May 22 2025 Pavel Raiskup <praiskup@redhat.com> 6.2-1
 - disable copying ca-trust dirs with Azure Linux 3 (reubeno@users.noreply.github.com)
 - bail clearly when image pull fails (awilliam@redhat.com)
